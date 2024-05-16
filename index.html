@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Developer Portfolio</title>
+ <style>
+    /* Reset default styles */
+html, body, ul, li, p, h1, h2, h3, form, button {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Arial, sans-serif;
+}
+
+/* Global styles */
+body {
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 40px 0;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+#hero {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    color: #100f0f;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#about, #portfolio, #contact {
+    background-color: #fff;
+}
+
+/* Portfolio styles */
+.portfolio-item {
+    margin-bottom: 40px;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Contact form styles */
+label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.selfimg{
+    border-radius: 25px;
+}
+
+ </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1> <img src="2.jpeg" alt="" height="65vh" class="selfimg">Akash Dey</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<section id="hero">
+    <div class="container">
+        <h2>Web Developer & Designer</h2>
+        <p>Welcome to my portfolio. I create beautiful and functional websites to bring ideas to life.</p>
+    </div>
+</section>
+<section id="about">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>I am a passionate web developer with a keen eye for design. My goal is to create unique and innovative websites that not only look great but also provide a seamless user experience.</p>
+        <p>With several years of experience in web development, I have worked on a variety of projects ranging from simple static websites to complex web applications. I am proficient in HTML, CSS, JavaScript, and various web development frameworks.</p>
+    </div>
+</section>
+<section id="portfolio">
+    <div class="container">
+        <h2>Portfolio</h2>
+        <div class="portfolio-item">
+            <img src="video 1.PNG" alt="Project 1" height="100vh">
+             <h2>About Iklavaya</h2>
+            <p>Iklavaya is a revolutionary online learning platform that aims to transform the way people learn and acquire new skills. Our platform offers a vast array of educational content, ranging from academic subjects to practical skills, all taught by experts in their respective fields.</p>
+            <p>At Iklavaya, we believe that learning should be engaging, accessible, and tailored to individual needs. That's why we have created a platform that allows learners to explore a diverse range of topics, at their own pace, and in a way that suits their learning style.</p>
+            <p>Whether you're looking to expand your knowledge, enhance your skills, or pursue a new passion, Iklavaya has something for everyone. Join us on this exciting journey of learning and discovery!</p>
+        
+        </div>
+        <div class="portfolio-item">
+            <img src="shot2.PNG" alt="Project 2" height="100vh">
+            <h2>About Our Library</h2>
+            <p>our online library, your go-to destination for discovering and exploring a vast collection of books, articles, and resources. Our mission is to provide a comprehensive platform for readers, researchers, and learners to access a wide range of literature from various genres and disciplines.</p>
+            <p>What sets us apart is our interactive review system, where users can share their thoughts, insights, and recommendations on books they've read. This allows our community to engage in meaningful discussions, discover new books, and make informed decisions about their reading choices.</p>
+            <p>Whether you're looking for a classic novel, a scientific journal, or a captivating story for your next read, our library has something for everyone. Explore our collection, join the conversation, and embark on a literary journey with us.</p>
+        </div>
+    </div>
+</section>
+<section id="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <form action="submit.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
